@@ -19,10 +19,9 @@ console.log(r2);
 
 
 //~ reduce
-
 var b = [10,20,30,40,50];
 
-var r3 = b.reduce((acc, cv)=>{ //~ it return the new array by reducing the array
+var r3 = b.reduce((acc, cv)=>{ //~ it return the number by reducing the array
     console.log(acc, cv);
     return acc + cv;
 },10);
@@ -30,7 +29,7 @@ var r3 = b.reduce((acc, cv)=>{ //~ it return the new array by reducing the array
 console.log(r3);
 
 //~ reduceRight
-let r4 = b.reduceRight((acc,cv) => { //~ it return the new array by reducing the array from right to left
+let r4 = b.reduceRight((acc,cv) => { //~ it return the number by reducing the array from right to left
     console.log(acc,cv);
     return acc+cv;
 })
@@ -40,8 +39,8 @@ console.log(r4);
 
 
 var a = [30,40,50,60];
-//~ some
 
+//~ some
 let r5 = a.some((v,i,ar)=>{ //~ it return the boolean value whether any of the element satisfies the condition or not
     console.log(v,i,ar);
     return v<60;
@@ -58,5 +57,17 @@ a.forEach((v,i,arr)=>{ //~ it execute the function for each element of the array
     console.log(v+5);
 });
 
+
+
+// ! reverse the string without using reverse method
+
+var s = "javascript";
+let ar3 = s.split("");
+
+let ar5 = ar3.reduceRight((acc,cv)=>{
+    return acc + cv;
+},"");
+
+console.log(ar5);
 
 
