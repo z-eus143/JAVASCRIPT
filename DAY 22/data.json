@@ -1,0 +1,18 @@
+{
+    "Users":[
+        {
+            "name":"sachine",
+            "id":123
+        },
+        {
+            "name":"dhoni",
+            "id":124
+        },
+        {
+            "name":"xyz",
+            "id":125
+        }
+    ],
+    "Students":[],
+    "Employee":[]
+}
